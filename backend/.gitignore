@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Environment variables (VERY IMPORTANT)
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache / temp
+.cache/
+.temp/
+.tmp/
+
+# Uploads (if you store images/files)
+uploads/
+
+# Build (if using TypeScript or compiled files)
+dist/
+build/
+
+# Testing
+coverage/
+
+# Misc
+*.local

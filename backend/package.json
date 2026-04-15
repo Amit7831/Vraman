@@ -1,0 +1,45 @@
+{
+  "name": "vraman-backend",
+  "version": "2.2.0",
+  "description": "Vraman Travel OTA Backend \u2014 Production-Ready SaaS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node utils/seeder.js",
+    "seed:flights": "node utils/flightSeeder.js",
+    "seed:flights:force": "node utils/flightSeeder.js --force",
+    "migrate:service-price": "node utils/migrateServicePrice.js",
+    "migrate:imagekit": "node utils/migrateToImageKit.js"
+  },
+  "keywords": [
+    "travel",
+    "saas",
+    "ota",
+    "flights",
+    "booking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "imagekit": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "multer": "^2.1.1",
+    "nodemon": "^3.1.0",
+    "razorpay": "^2.9.2",
+    "nodemailer": "^6.9.13"
+  }
+}

@@ -13,6 +13,8 @@ lerna-debug.log*
 # Dependencies
 # =========================
 node_modules/
+frontend/node_modules/
+backend/node_modules/
 
 # =========================
 # Build files
@@ -22,6 +24,8 @@ dist-ssr/
 build/
 .next/
 out/
+frontend/dist/
+backend/dist/
 
 # =========================
 # Environment variables
@@ -62,6 +66,12 @@ coverage/
 .nyc_output/
 
 # =========================
+# Uploads (important)
+# =========================
+backend/uploads/
+uploads/
+
+# =========================
 # Misc
 # =========================
 *.local
@@ -70,13 +80,14 @@ coverage/
 *.gz
 
 # =========================
-# Backend specific (Node)
-# =========================
-uploads/
-logs/
-
-# =========================
 # Frontend specific (React/Vite)
 # =========================
 vite.svg
 *.tsbuildinfo
+
+# =========================
+# Optional (recommended)
+# =========================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
